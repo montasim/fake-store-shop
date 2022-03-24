@@ -1,11 +1,11 @@
 import React from 'react';
 
-export const Menubar = () => {
+const Menubar = ({ country }) => {
     return (
         <div>
-            <h1>Hero Alom</h1>
+            <h1>Hero Alom From {country}</h1>
         </div>
     );
 };
 
-// export default Menubar;
+export default Menubar;
