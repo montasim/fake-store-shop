@@ -9,7 +9,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* commenting this will stop react logo animation */
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
