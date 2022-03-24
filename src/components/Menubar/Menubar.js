@@ -4,7 +4,7 @@ import './Menubar.css'
 const Menubar = ({ count }) => {
     return (
         <div>
-            <div className="container py-5">
+            <div className="container py-5 ">
                 <div className="row">
                     <div className="col-md-2">Logo</div>
                     <div className="col-md-10 menu-container d-flex justify-content-end">
