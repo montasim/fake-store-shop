@@ -7,10 +7,14 @@ import { useState } from 'react';
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const setCartCount = _ => {
+    setCount(count + 1);
+  }
   return (
     <div className="App">
       <Menubar count={count}></Menubar>
-      <Products></Products>
+      <Products setCartCount={setCartCount}></Products>
     </div>
   );
 }

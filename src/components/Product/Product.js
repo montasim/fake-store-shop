@@ -2,8 +2,11 @@ import React from 'react';
 import './Product.css'
 
 const Product = (props) => {
-    console.log(props.product);
+    console.log(props);
+
     const { category, description, id, image, price, rating, title } = props.product;
+
+    const { setCartCount } = props;
 
     return (
         <div className='col-8 col-md-6 col-lg-4 product-card mx-auto'>
@@ -15,7 +18,7 @@ const Product = (props) => {
                 <p>Price: {price}   Rating: {rating.rate}</p>
                 <small>Category: {category}</small>
                 <div className="d-flex justify-content-around gap-3 my-3">
-                    <button className='btn btn-success'>Add To Cart</button>
+                    <button className='btn btn-success' onClick={setCartCount}>Add To Cart</button>
                     <button className='btn btn-danger'>Deletet</button>
                     <button className='btn btn-info'>Details</button>
                 </div>

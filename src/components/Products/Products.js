@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Products.css';
 
-const AllProducts = () => {
+const AllProducts = ({ setCartCount }) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const AllProducts = () => {
             <h1>All Products</h1>
             <div className="row mx-auto my-5">
                 {
-                    products.map(pd => <Product key={pd.id} product={pd}></Product>)
+                    products.map(pd => <Product key={pd.id} product={pd} setCartCount={setCartCount}></Product>)
                 }
             </div>
         </div>
