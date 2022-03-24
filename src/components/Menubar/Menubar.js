@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Menubar = () => {
+export const Menubar = () => {
     return (
         <div>
             <h1>Hero Alom</h1>
@@ -8,4 +8,4 @@ const Menubar = () => {
     );
 };
 
-export default Menubar;
+// export default Menubar;
