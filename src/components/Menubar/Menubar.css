@@ -3,3 +3,7 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+.hover-effect:hover {
+  color: orange;
+}
