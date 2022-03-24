@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Test = ({ count }) => {
+const Test = () => {
+    const [count, setCount] = useState(11);
+
+    console.log(count);
+    setCount(22);
+
+    console.log(count);
     return (
         <div>
             <h2>This is Test</h2>
