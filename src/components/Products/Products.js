@@ -12,9 +12,9 @@ const AllProducts = () => {
     }, []);
 
     return (
-        <div>
+        <div className='my-5'>
             <h1>All Products</h1>
-            <div className="row">
+            <div className="row mx-auto my-5">
                 {
                     products.map(pd => <Product key={pd.id} product={pd}></Product>)
                 }
