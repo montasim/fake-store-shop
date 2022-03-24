@@ -10,7 +10,7 @@ const Product = (props) => {
 
     return (
         <div data-aos="fade-up"
-            data-aos-duration="3000" className='col-8 col-md-6 col-lg-4 product-card mx-auto'>
+            data-aos-duration="3000" className='col-10 col-md-6 col-lg-4 product-card mx-auto'>
             <div className="card p-2 border align-items-center">
                 <div className=''>
                     <img className='img-fluid w-50 mb-5' src={image} alt={title + 'image'} />
