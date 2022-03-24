@@ -6,7 +6,7 @@ import Test from './components/Test/Test';
 
 function App() {
   const count = _ => {
-    return <h2>From Count Function</h2>
+    return console.log('Got me?');
   }
   return (
     <div className="App">
